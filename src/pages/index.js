@@ -11,6 +11,7 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Scroll from "../components/Scroll/Scroll";
+import ThreeObject from "../components/Threejs/ThreeObject";
 
 /**
  * npm run dev
@@ -22,8 +23,9 @@ const Home = () => {
       <Scroll />
       <Section grid>
         <Hero />
-        <BgAnimation />
+        {/* <BgAnimation /> */}
         {/* <DayBgAnimation /> */}
+        <ThreeObject />
       </Section>
       <Projects />
       <Technologies />
