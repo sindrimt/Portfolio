@@ -25,6 +25,7 @@ const Shoe = ({ ...props }) => {
     </group>
   );
 };
+useGLTF.preload("shoe-draco.glb"); /* ??? */
 
 const Box = (props) => {
   const mesh = useRef();
@@ -61,7 +62,7 @@ const ThreeObject = () => {
     <Canvas
       colorManagement
       shadowMap
-      camera={{ position: [10, 4, -8], fov: 10 }}
+      camera={{ position: [10, 1, -8], fov: 15 }}
     >
       <Suspense fallback={null}>
         <Shoe />
@@ -83,7 +84,7 @@ const ThreeObject = () => {
 
       {/* <Box position={[1.2, 0, 0]} /> */}
       {/* <CoolLine /> */}
-      <OrbitControls />
+      <OrbitControls minDistance={8} maxDistance={11} />
     </Canvas>
   );
 };
