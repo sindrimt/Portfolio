@@ -70,7 +70,7 @@ const ThreeObject = () => {
         <ContactShadows
           rotation-x={Math.PI / 2}
           position={[0, -0.8, 0]}
-          opacity={0.25}
+          opacity={0.5}
           width={10}
           height={10}
           blur={1.5}
