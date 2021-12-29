@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const CanvasContainer = styled.div`
+  top: 10%;
+  right: -1%;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    left: 10%;
+    display: grid;
+  }
+`;
+
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
@@ -9,7 +22,6 @@ export const Section = styled.section`
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
-
   grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.md} {

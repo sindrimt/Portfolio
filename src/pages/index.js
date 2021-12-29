@@ -23,14 +23,13 @@ const Home = () => {
     <Layout>
       <Scroll />
       <Section grid>
+        <Model />
         <Hero />
         {/* <BgAnimation /> */}
         {/* <DayBgAnimation /> */}
         {/* <ThreeObject /> */}
         {/* <Model /> */}
         {/* <ThreeObject /> */}
-
-        <Model />
       </Section>
       <Projects />
       <Technologies />
