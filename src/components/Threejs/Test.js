@@ -4,27 +4,31 @@ import { Canvas, useFrame } from "@react-three/fiber";
 
 export default function Test(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/Poimandres.gltf");
-  useFrame(
+  const { nodes, materials } = useGLTF("/Pistol.gltf");
+  /* useFrame(
     (state, change) =>
-      (group.current.rotation.y += 0.007) /* , (mesh.current.rotation.x += 0.002) */
-  );
+      (group.current.rotation.y += 0.007)
+  ); */
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007_1.geometry}
-        material={materials["Material.001"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Curve007_2.geometry}
-        material={materials["Material.002"]}
-      />
+      <group rotation={[-Math.PI / 2, 0, 0]}>
+        <group position={[0.24, 0.06, 0.05]} rotation={[0, -0.03, 0.02]}>
+          <mesh
+            geometry={nodes.mesh_0.geometry}
+            material={nodes.mesh_0.material}
+          />
+          <mesh
+            geometry={nodes.mesh_1.geometry}
+            material={nodes.mesh_1.material}
+          />
+          <mesh
+            geometry={nodes.mesh_2.geometry}
+            material={nodes.mesh_2.material}
+          />
+        </group>
+      </group>
     </group>
   );
 }
 
-useGLTF.preload("/Poimandres.gltf");
+useGLTF.preload("/Pistol.gltf");

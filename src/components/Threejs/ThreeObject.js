@@ -4,6 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 import { OrbitControls, Environment, ContactShadows } from "@react-three/drei";
+import Test from "./Test";
 
 const Shoe = ({ ...props }) => {
   const group = useRef();
@@ -62,7 +63,7 @@ const ThreeObject = () => {
     <Canvas
       colorManagement
       shadowMap
-      camera={{ position: [10, 1, -8], fov: 15 }}
+      camera={{ position: [10, 1, -8], fov: 15 /* 15 for shoe / geometry */ }}
     >
       <Suspense fallback={null}>
         <Shoe />
