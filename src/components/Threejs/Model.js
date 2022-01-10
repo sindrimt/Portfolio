@@ -17,8 +17,8 @@ export default function Model(props) {
         camera={{ position: [1, -5, 2] /* , fov: 50  */ }}
       >
         <Suspense fallback={null}>
-          {/* <Geometry {...props} /> */}
-          <Test />
+          <Geometry {...props} />
+          {/* <Test /> */}
           {/* <Environment files="envi.hdr" /> */}
 
           <ContactShadows

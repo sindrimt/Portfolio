@@ -66,7 +66,9 @@ const ThreeObject = () => {
       camera={{ position: [10, 1, -8], fov: 15 /* 15 for shoe / geometry */ }}
     >
       <Suspense fallback={null}>
-        <Shoe />
+        {/* <Shoe /> */}
+        <Test />
+
         <Environment files="envi.hdr" />
         <ContactShadows
           rotation-x={Math.PI / 2}
