@@ -27,7 +27,7 @@ const Home = () => {
         <Hero />
         {/* <BgAnimation /> */}
         <Model />
-        <ThreeObject />
+        {/* <ThreeObject /> */}
       </Section>
       <Projects />
       <Technologies />

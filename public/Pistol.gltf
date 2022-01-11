@@ -184,18 +184,18 @@
   "buffers": [
     {
       "byteLength": 11136888,
-      "uri": "scene.bin"
+      "uri": "pistol.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/material_0_baseColor.jpeg"
+      "uri": "texturesPistol/material_0_baseColor.jpeg"
     },
     {
-      "uri": "textures/material_0_metallicRoughness.png"
+      "uri": "texturesPistol/material_0_metallicRoughness.png"
     },
     {
-      "uri": "textures/material_0_normal.jpeg"
+      "uri": "texturesPistol/material_0_normal.jpeg"
     }
   ],
   "materials": [

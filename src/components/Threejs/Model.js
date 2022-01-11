@@ -14,11 +14,11 @@ export default function Model(props) {
       <Canvas
         colorManagement
         shadowMap
-        camera={{ position: [1, -5, 2] /* , fov: 50  */ }}
+        camera={{ position: [1, 1, 2], fov: 80 }}
       >
         <Suspense fallback={null}>
-          <Geometry {...props} />
-          {/* <Test /> */}
+          {/* <Geometry {...props} /> */}
+          <Test />
           {/* <Environment files="envi.hdr" /> */}
 
           <ContactShadows
@@ -35,7 +35,7 @@ export default function Model(props) {
 
         <ambientLight intensity={0.8} />
         <spotLight intensity={3.8} position={[5, 10, 20]} />
-        <OrbitControls maxDistance={35} minDistance={25} />
+        <OrbitControls minDistance={760} />
       </Canvas>
     </CanvasContainer>
   );
