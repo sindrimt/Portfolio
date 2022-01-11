@@ -49,7 +49,7 @@ const Technologies = () => {
             </ListParagraph>
             <ImageContainer>
               {/* <BgAnimation /> */}
-              <Model fast />
+              {/* <Model fast /> */}
             </ImageContainer>
           </ListContainer>
         </ListItem>

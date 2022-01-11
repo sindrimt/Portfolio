@@ -79,12 +79,12 @@ export const CompanyContainer = styled.div`
 `;
 
 export const Slogan = styled.p`
-  color: color: ${(props) => props.theme.colorTheme.primary1};
+  color: ${(props) => props.theme.colorTheme.sloganColor};
   min-width: 280px;
   letter-spacing: 0.02em;
   font-size: 18px;
   line-height: 30px;
-  padding: 1rem;
+  padding: 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 16px;

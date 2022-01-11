@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 
-export default function Test(props) {
+export default function CustomObject(props) {
   const group = useRef();
   useFrame(
     (state, change) =>

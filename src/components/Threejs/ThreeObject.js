@@ -4,7 +4,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 import { OrbitControls, Environment, ContactShadows } from "@react-three/drei";
-import Test from "./Test";
+import CustomObject from "./CustomObject";
 
 const Shoe = ({ ...props }) => {
   const group = useRef();

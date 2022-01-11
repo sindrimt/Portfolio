@@ -7,7 +7,7 @@ export const norwegian = {
   hero: {
     sectionTitle: ["Velkommen Til Min", "Personlige Nettside........"],
     sectionText:
-      "Norwegian Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dictarecusandae atque beatae numquam quod obcaecati, placeat magnam",
+      "Dette er min personlige nettside med prosjektene jeg har gjort og litt informasjon om meg selv bla bla bla,  atque beatae numquam quod obcaecati, placeat magnam",
     buttonText: "Mer info",
   },
 };
