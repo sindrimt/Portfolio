@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 import Acomplishments from "../components/Acomplishments/Acomplishments";
@@ -11,6 +11,8 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Scroll from "../components/Scroll/Scroll";
+import ThreeObject from "../components/Threejs/ThreeObject";
+import Model from "../components/Threejs/Model";
 
 /**
  * npm run dev
@@ -21,9 +23,11 @@ const Home = () => {
     <Layout>
       <Scroll />
       <Section grid>
+        {/* <Model /> */}
         <Hero />
-        <BgAnimation />
-        {/* <DayBgAnimation /> */}
+        {/* <BgAnimation /> */}
+        <Model />
+        {/* <ThreeObject /> */}
       </Section>
       <Projects />
       <Technologies />

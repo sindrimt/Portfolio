@@ -23,6 +23,7 @@ export const darkTheme = {
     fadeBottom: "linear-gradient(to right, #3b5d85, #0f1721)",
     fadeScroll: "linear-gradient(rgba(59,93,133, 1), rgba(15,23,33, 1))",
     scrollBackground: "grey",
+    sloganColor: "rgba(255, 255, 255, 0.7)",
   },
 
   // Breakpoints for responsive design
@@ -59,6 +60,7 @@ export const lightTheme = {
       "linear-gradient(to right, rgba(255,0,0, 0.7) , rgba(240, 255, 0, 0.7))",
     fadeScroll: "linear-gradient(rgba(255,0,0, 0.7) , rgba(240, 255, 0, 0.7))",
     scrollBackground: "rgba(245, 245, 245, 1)",
+    sloganColor: "#484b6a",
   },
 
   // Breakpoints for responsive design

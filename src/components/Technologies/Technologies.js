@@ -19,6 +19,8 @@ import { ContextState } from "../../../context/ContextState";
 import BgAnimation from "../../../src/components/BackgrooundAnimation/BackgroundAnimation";
 import { darkTheme, lightTheme } from "../../../src/themes/default";
 
+import Model from "../Threejs/Model";
+
 const Technologies = () => {
   const [darkMode, setDarkMode] = useContext(ContextState);
 
@@ -46,7 +48,8 @@ const Technologies = () => {
               With React.js
             </ListParagraph>
             <ImageContainer>
-              <BgAnimation />
+              {/* <BgAnimation /> */}
+              {/* <Model fast /> */}
             </ImageContainer>
           </ListContainer>
         </ListItem>
