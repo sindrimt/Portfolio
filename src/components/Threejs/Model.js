@@ -57,7 +57,7 @@ export default function Model(props) {
             rotation-x={Math.PI / 2}
             position={[0, -0.2, 0]}
             opacity={0.8}
-            width={10}
+            width={9}
             height={9}
             blur={1.5}
             far={0.8}
