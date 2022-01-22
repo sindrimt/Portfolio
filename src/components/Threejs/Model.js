@@ -45,20 +45,20 @@ export default function Model(props) {
         colorManagement
         shadowMap
         camera={{
-          position: [1, 1, 2],
+          position: [1, 0.4, 2],
           fov: 80 /* for planet: position: [10, 80, 10], fov: 50  */,
         }}
       >
         <Suspense fallback={<Loading />}>
           {/* <Geometry {...props} /> */}
           <Island />
-          <Environment preset={darkMode ? "night" : "dawn"} />
+          <Environment preset={/* darkMode ? "night" :  */ "dawn"} />
           <ContactShadows
             rotation-x={Math.PI / 2}
             position={[0, -0.2, 0]}
             opacity={0.8}
             width={10}
-            height={10}
+            height={9}
             blur={1.5}
             far={0.8}
           />
