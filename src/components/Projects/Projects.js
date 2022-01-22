@@ -33,7 +33,9 @@ const Projects = ({ theme, setTheme }) => {
     <Section nopadding id="projects">
       <LargeBreak />
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
+      <SectionTitle main>
+        {darkMode ? norwegian.projects.mainTitle : english.projects.mainTitle}
+      </SectionTitle>
       <GridContainer>
         {projects.map(
           ({
@@ -59,7 +61,9 @@ const Projects = ({ theme, setTheme }) => {
               <CardInfo>{darkMode ? description : descriptionEnglish}</CardInfo>
               <div>
                 <br />
-                <TitleContent>Stack</TitleContent>
+                <TitleContent>
+                  {darkMode ? norwegian.projects.stack : english.projects.stack}
+                </TitleContent>
                 <TagList>
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag}</Tag>
@@ -68,10 +72,12 @@ const Projects = ({ theme, setTheme }) => {
               </div>
               <UtilityList>
                 <ExternalLinks href={visit} target="_blank">
-                  Live Server
+                  {darkMode
+                    ? norwegian.projects.server
+                    : english.projects.server}
                 </ExternalLinks>
                 <ExternalLinks href={source} target="_blank">
-                  Source Code
+                  {darkMode ? norwegian.projects.code : english.projects.code}
                 </ExternalLinks>
               </UtilityList>
             </BlogCard>

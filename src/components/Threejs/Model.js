@@ -1,4 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
+import styled from "styled-components";
+
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -13,11 +15,11 @@ import {
 import ClipLoader from "react-spinners/ClipLoader";
 /* import BarLoader from "react-spinners/BarLoader";
 import BounceLoader from "react-spinners/BounceLoader"; */
-
 import { CanvasContainer } from "../../styles/GlobalComponents";
 import { ContextState } from "../../../context/ContextState";
 
-import CustomObject from "./CustomObject";
+import Planet from "./Planet";
+import Island from "./Island";
 import Geometry from "./Geometry";
 
 const Loading = () => {
@@ -42,13 +44,15 @@ export default function Model(props) {
       <Canvas
         colorManagement
         shadowMap
-        camera={{ position: [1, 1, 2], fov: 80 }}
+        camera={{
+          position: [1, 1, 2],
+          fov: 80 /* for planet: position: [10, 80, 10], fov: 50  */,
+        }}
       >
         <Suspense fallback={<Loading />}>
           {/* <Geometry {...props} /> */}
-          <CustomObject />
-          {/* <Environment files="envi.hdr" /> */}
-
+          <Island />
+          <Environment preset={darkMode ? "night" : "dawn"} />
           <ContactShadows
             rotation-x={Math.PI / 2}
             position={[0, -0.2, 0]}
@@ -58,16 +62,24 @@ export default function Model(props) {
             blur={1.5}
             far={0.8}
           />
-          {/* <Environment preset={darkMode ? "night" : "dawn"} /> Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models)*/}
+          {/* <Environment preset={darkMode ? "night" : "dawn"} /> */}
+          {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models) */}
         </Suspense>
 
         <ambientLight intensity={0.8} />
         <spotLight intensity={3.8} position={[5, 10, 20]} />
-        <OrbitControls
+        <OrbitControls /* Hindrer bruker fra å scrolle med uhell */
           minDistance={760}
-          enableZoom={false} /* Hindrer bruker fra å scrolle med uhell */
+          /* maxDistance={7} */
+          enableZoom={false}
         />
       </Canvas>
     </CanvasContainer>
   );
 }
+
+const LoadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

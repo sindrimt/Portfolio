@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 
-export default function CustomObject(props) {
+export default function Island({ ...props }) {
   const group = useRef();
   useFrame(
     (state, change) =>
