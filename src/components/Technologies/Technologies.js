@@ -18,12 +18,14 @@ import {
 import { ContextState } from "../../../context/ContextState";
 import BgAnimation from "../../../src/components/BackgrooundAnimation/BackgroundAnimation";
 import { darkTheme, lightTheme } from "../../../src/themes/default";
+import { norwegian, english } from "../../constants/language";
 
 import Model from "../Threejs/Model";
 
 const Technologies = () => {
-  const [darkMode, setDarkMode] = useContext(ContextState);
-
+  const [darkMode, setDarkMode, language, setLanguage] =
+    useContext(ContextState);
+  //HER FUNGERER LANGUAGE HVORFOR??? HAHAHAH xDD
   let iconColor = darkMode
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
@@ -32,11 +34,13 @@ const Technologies = () => {
     <Section id="tech">
       <SectionDivider />
       <br />
-      <SectionTitle>Technologies</SectionTitle>
+      <SectionTitle>
+        {language ? norwegian.technologies.title : english.technologies.title}
+      </SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cum
-        obcaecati quas ipsum, debitis reiciendis dolorum. Temporibus a
-        architecto dolor!
+        {language
+          ? norwegian.technologies.mainText
+          : english.technologies.mainText}
       </SectionText>
       <List>
         <ListItem>
@@ -44,8 +48,13 @@ const Technologies = () => {
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
             <ListParagraph>
-              Experience with <br />
-              With React.js
+              {language
+                ? norwegian.technologies.frontEndText[0]
+                : english.technologies.frontEndText[0]}
+              <br />
+              {language
+                ? norwegian.technologies.frontEndText[1]
+                : english.technologies.frontEndText[1]}
             </ListParagraph>
             <ImageContainer>
               {/* <BgAnimation /> */}
@@ -62,8 +71,13 @@ const Technologies = () => {
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
-              Experience With <br />
-              Node and Databases
+              {language
+                ? norwegian.technologies.backEndText[0]
+                : english.technologies.backEndText[0]}
+              <br />
+              {language
+                ? norwegian.technologies.backEndText[1]
+                : english.technologies.backEndText[1]}
             </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -72,8 +86,13 @@ const Technologies = () => {
           <ListContainer>
             <ListTitle>UI/UX</ListTitle>
             <ListParagraph>
-              Experience with <br />
-              Figma balles
+              {language
+                ? norwegian.technologies.uiText[0]
+                : english.technologies.uiText[0]}
+              <br />
+              {language
+                ? norwegian.technologies.uiText[1]
+                : english.technologies.uiText[1]}
             </ListParagraph>
           </ListContainer>
         </ListItem>
