@@ -8,7 +8,13 @@ export const norwegian = {
     sectionTitle: ["Velkommen Til Min", "Personlige Nettside........"],
     sectionText:
       "Dette er min personlige nettside med prosjektene jeg har gjort og litt informasjon om meg selv bla bla bla,  atque beatae numquam quod obcaecati, placeat magnam",
-    buttonText: "Mer info",
+    buttonText: "Min CV",
+  },
+  projects: {
+    mainTitle: "Prosjekter",
+    stack: "Stack",
+    server: "Live server",
+    code: "Kode",
   },
 };
 export const english = {
@@ -21,6 +27,12 @@ export const english = {
     sectionTitle: ["Welcome To My", "Personal Website........."],
     sectionText:
       "EngLish Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dictarecusandae atque beatae numquam quod obcaecati, placeat magnam",
-    buttonText: "Learn More",
+    buttonText: "My CV",
+  },
+  projects: {
+    mainTitle: "Projects",
+    stack: "Stack",
+    server: "Live server",
+    code: "Code",
   },
 };
