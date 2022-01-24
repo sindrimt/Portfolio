@@ -16,6 +16,19 @@ export const norwegian = {
     server: "Live server",
     code: "Kode",
   },
+  technologies: {
+    title: "Teknologier",
+    mainText:
+      "NORSK Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cumobcaecati quas ipsum, debitis reiciendis dolorum. Temporibus aarchitecto dolor!",
+    frontEndText: ["Erfaring", "med React.js"],
+    backEndText: ["Erfaring med", "Node og Databaser"],
+    uiText: ["Erfaring med", "figma lol"],
+  },
+  timeline: {
+    header: "Om Meg",
+    mainText:
+      "Norsk Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto, distinctio magnam nihil sapiente optio illum asperiores quidem possimus deleniti?",
+  },
 };
 export const english = {
   header: {
@@ -34,5 +47,18 @@ export const english = {
     stack: "Stack",
     server: "Live server",
     code: "Code",
+  },
+  technologies: {
+    title: "Technologies",
+    mainText:
+      "ENGELSK Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cumobcaecati quas ipsum, debitis reiciendis dolorum. Temporibus aarchitecto dolor!",
+    frontEndText: ["Experience", "With React.js"],
+    backEndText: ["Experience with", "Node and Databases"],
+    uiText: ["Experience", "with Figma"],
+  },
+  timeline: {
+    header: "Om Meg",
+    mainText:
+      "Enlish Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto, distinctio magnam nihil sapiente optio illum asperiores quidem possimus deleniti?",
   },
 };
