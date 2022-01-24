@@ -57,7 +57,7 @@ export const english = {
     uiText: ["Experience", "with Figma"],
   },
   timeline: {
-    header: "Om Meg",
+    header: "About Me",
     mainText:
       "Enlish Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto, distinctio magnam nihil sapiente optio illum asperiores quidem possimus deleniti?",
   },
