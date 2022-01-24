@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 
 import {
   CarouselButton,
@@ -18,6 +18,9 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
+
+import { ContextState } from "../../../context/ContextState";
+import { norwegian, english } from "../../constants/language";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -53,8 +56,6 @@ const Timeline = () => {
     }
   };
 
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
@@ -63,13 +64,16 @@ const Timeline = () => {
     window.addEventListener("resize", handleResize);
   }, []);
 
+  const [darkMode, setDarkMode, language, setLanguage] =
+    useContext(ContextState);
+
   return (
     <Section id="about">
-      <SectionTitle>About me</SectionTitle>
+      <SectionTitle>
+        {language ? norwegian.timeline.header : english.timeline.header}
+      </SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        iusto, distinctio magnam nihil sapiente optio illum asperiores quidem
-        possimus deleniti?
+        {language ? norwegian.timeline.mainText : english.timeline.mainText}
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -119,7 +123,9 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+                <CarouselItemText>
+                  {language ? item.text : item.englishText}
+                </CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}

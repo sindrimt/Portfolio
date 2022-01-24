@@ -54,18 +54,54 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Lorem ipsum dolor sit amet." },
-  { year: 2018, text: "Lorem ipsum dolor sit amet." },
-  { year: 2019, text: "Lorem ipsum dolor sit amet." },
-  { year: 2020, text: "Lorem ipsum dolor sit amet." },
-  { year: 2021, text: "Lorem ipsum dolor sit amet." },
+  {
+    year: 2017,
+    text: "Lorem ipsum dolor sit amet.",
+    englishText: "English Lorem dolor sit amet",
+  },
+  {
+    year: 2018,
+    text: "Lorem ipsum dolor sit amet.",
+    englishText: "English Lorem dolor sit amet",
+  },
+  {
+    year: 2019,
+    text: "Lorem ipsum dolor sit amet.",
+    englishText: "English Lorem dolor sit amet",
+  },
+  {
+    year: 2020,
+    text: "Lorem ipsum dolor sit amet.",
+    englishText: "English Lorem dolor sit amet",
+  },
+  {
+    year: 2021,
+    text: "Lorem ipsum dolor sit amet.",
+    englishText: "English Lorem dolor sit amet",
+  },
 ];
 
 export const data = [
-  { number: "20 +", text: "something" },
-  { number: "1000 +", text: "something" },
-  { number: "1900 +", text: "somwthing" },
-  { number: "5000 +", text: "something" },
+  {
+    number: "20 +",
+    text: "something",
+    englishText: "English Something",
+  },
+  {
+    number: "1000 +",
+    text: "something",
+    englishText: "English Something",
+  },
+  {
+    number: "1900 +",
+    text: "somwthing",
+    englishText: "English Something",
+  },
+  {
+    number: "5000 +",
+    text: "something",
+    englishText: "English Something",
+  },
 ];
 
 export const coolImage = {

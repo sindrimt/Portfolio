@@ -25,7 +25,13 @@ import Model from "../Threejs/Model";
 const Technologies = () => {
   const [darkMode, setDarkMode, language, setLanguage] =
     useContext(ContextState);
+
+  /**
+   * LØSNING HER - FIX SENERE :)
+   */
   //HER FUNGERER LANGUAGE HVORFOR??? HAHAHAH xDD
+  //TODO JEG FANT DET UT (MÅ VÆRE I RIKTIG REKKEFØLGE!!! (darkMode, setDarkMode, language, setLanguage))
+
   let iconColor = darkMode
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
