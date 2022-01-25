@@ -12,7 +12,7 @@ import { ContextState } from "../../../context/ContextState";
 import { norwegian, english } from "../../constants/language";
 
 const Hero = () => {
-  const [language, setLanguage, darkMode, setDarkMode] =
+  const [darkMode, setDarkMode, language, setLanguage] =
     useContext(ContextState);
   // Så cursed at darkMode aktiverer language, men heyy is work
   return (
@@ -20,19 +20,19 @@ const Hero = () => {
       <LeftSection>
         <SectionTitle>
           <br />
-          {darkMode
+          {language
             ? norwegian.hero.sectionTitle[0]
             : english.hero.sectionTitle[0]}
           <br />
-          {darkMode
+          {language
             ? norwegian.hero.sectionTitle[1]
             : english.hero.sectionTitle[1]}
         </SectionTitle>
         <SectionText>
-          {darkMode ? norwegian.hero.sectionText : english.hero.sectionText}
+          {language ? norwegian.hero.sectionText : english.hero.sectionText}
         </SectionText>
-        <Button onClick={() => console.log("asdasd " + language)}>
-          {darkMode ? norwegian.hero.buttonText : english.hero.buttonText}
+        <Button>
+          {language ? norwegian.hero.buttonText : english.hero.buttonText}
         </Button>
       </LeftSection>
     </Section>

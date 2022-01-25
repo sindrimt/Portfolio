@@ -27,14 +27,14 @@ import { norwegian, english } from "../../constants/language";
 //import kul from "../../../public/assets/kul.gif";
 
 const Projects = ({ theme, setTheme }) => {
-  const [language, setLanguage, darkMode, setDarkMode] =
+  const [darkMode, setDarkMode, language, setLanguage] =
     useContext(ContextState);
   return (
     <Section nopadding id="projects">
       <LargeBreak />
       <SectionDivider />
       <SectionTitle main>
-        {darkMode ? norwegian.projects.mainTitle : english.projects.mainTitle}
+        {language ? norwegian.projects.mainTitle : english.projects.mainTitle}
       </SectionTitle>
       <GridContainer>
         {projects.map(
@@ -54,15 +54,15 @@ const Projects = ({ theme, setTheme }) => {
               {}
               <TitleContent>
                 <HeaderThree title>
-                  {darkMode ? title : titleEnglish}
+                  {language ? title : titleEnglish}
                 </HeaderThree>
                 <Hr />
               </TitleContent>
-              <CardInfo>{darkMode ? description : descriptionEnglish}</CardInfo>
+              <CardInfo>{language ? description : descriptionEnglish}</CardInfo>
               <div>
                 <br />
                 <TitleContent>
-                  {darkMode ? norwegian.projects.stack : english.projects.stack}
+                  {language ? norwegian.projects.stack : english.projects.stack}
                 </TitleContent>
                 <TagList>
                   {tags.map((tag, i) => (
@@ -72,12 +72,12 @@ const Projects = ({ theme, setTheme }) => {
               </div>
               <UtilityList>
                 <ExternalLinks href={visit} target="_blank">
-                  {darkMode
+                  {language
                     ? norwegian.projects.server
                     : english.projects.server}
                 </ExternalLinks>
                 <ExternalLinks href={source} target="_blank">
-                  {darkMode ? norwegian.projects.code : english.projects.code}
+                  {language ? norwegian.projects.code : english.projects.code}
                 </ExternalLinks>
               </UtilityList>
             </BlogCard>

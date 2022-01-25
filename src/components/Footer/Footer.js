@@ -19,7 +19,8 @@ import { lightTheme, darkTheme } from "../../themes/default";
 import { ContextState } from "../../../context/ContextState";
 
 const Footer = () => {
-  const [darkMode, setDarkMode, language] = useContext(ContextState);
+  const [darkMode, setDarkMode, language, setLanguage] =
+    useContext(ContextState);
   let textColor = darkMode
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
