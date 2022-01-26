@@ -16,7 +16,9 @@ const Acomplishments = () => {
 
   return (
     <Section>
-      <SectionTitle>Personal Accomplishments</SectionTitle>
+      <SectionTitle>
+        {language ? "Personlige Bragder" : "Personal Acomplishments"}
+      </SectionTitle>
       <Boxes>
         {data.map((card, index) => (
           <Box key={index}>
