@@ -27,7 +27,7 @@ const Loading = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (loading != 100) setLoading(false);
+    if (progress != 100) setLoading(false);
     setLoading(true);
   }, [loading]);
   return (
