@@ -22,7 +22,7 @@ import Planet from "./Planet";
 import Island from "./Island";
 import Geometry from "./Geometry";
 
-const Loading = () => {
+const Loading: React.FC = () => {
   const { progress } = useProgress();
   const [loading, setLoading] = useState(false);
 
@@ -68,11 +68,7 @@ export default function Model(props) {
 
         <ambientLight intensity={0.8} />
         <spotLight intensity={3.8} position={[5, 10, 20]} />
-        <OrbitControls /* Hindrer bruker fra å scrolle med uhell */
-          minDistance={760}
-          /* maxDistance={7} */
-          enableZoom={false}
-        />
+        <OrbitControls minDistance={760} enableZoom={false} />
       </Canvas>
     </CanvasContainer>
   );
