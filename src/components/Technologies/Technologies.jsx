@@ -16,11 +16,8 @@ import {
 } from "./TechnologiesStyles";
 
 import { ContextState } from "../../../context/ContextState";
-import BgAnimation from "../../../src/components/BackgrooundAnimation/BackgroundAnimation";
-import { darkTheme, lightTheme } from "../../../src/themes/default";
+import { darkTheme, lightTheme } from "../../themes/default";
 import { norwegian, english } from "../../constants/language";
-
-import Model from "../Threejs/Model";
 
 const Technologies = () => {
   const [darkMode, setDarkMode, language, setLanguage] =
