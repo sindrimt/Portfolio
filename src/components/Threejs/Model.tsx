@@ -63,7 +63,7 @@ export default function Model(props) {
             far={0.8}
           />
           {/* <Environment preset={darkMode ? "night" : "dawn"} /> */}
-          {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models) */}
+          {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models)f */}
         </Suspense>
 
         <ambientLight intensity={0.8} />
