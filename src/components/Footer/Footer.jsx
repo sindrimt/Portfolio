@@ -1,7 +1,11 @@
 import React, { useContext } from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+/* import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"; */
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "../../constants/icons";
 
-import { SocialIcons } from "../Header/HeaderStyles";
 import {
   CompanyContainer,
   FooterWrapper,
@@ -15,7 +19,7 @@ import {
 } from "./FooterStyles";
 
 import { lightTheme, darkTheme } from "../../themes/default";
-
+import { SocialIcons } from "../Header/HeaderStyles";
 import { ContextState } from "../../../context/ContextState";
 
 const Footer = () => {
