@@ -1,12 +1,17 @@
 import Link from "next/link";
 import React, { useState, useContext } from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
-import { TiWorldOutline } from "react-icons/ti";
-import { RiEnglishInput, RiAncientGateLine } from "react-icons/ri";
 
-import { IoMdMoon } from "react-icons/io";
-import { IoMdSunny } from "react-icons/io";
+import {
+  IoMdMoon,
+  IoMdSunny,
+  TiWorldOutline,
+  RiEnglishInput,
+  RiAncientGateLine,
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  DiCssdeck,
+} from "../../constants/icons";
 
 import { ContextState } from "../../../context/ContextState";
 import { norwegian, english } from "../../constants/language";
