@@ -22,12 +22,12 @@ import Planet from "./Planet";
 import Island from "./Island";
 import Geometry from "./Geometry";
 
-const Loading = () => {
+const Loading: React.FC = () => {
   const { progress } = useProgress();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (loading != 100) setLoading(false);
+    if (progress != 100) setLoading(false);
     setLoading(true);
   }, [loading]);
   return (
@@ -63,16 +63,12 @@ export default function Model(props) {
             far={0.8}
           />
           {/* <Environment preset={darkMode ? "night" : "dawn"} /> */}
-          {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models) */}
+          {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models)f */}
         </Suspense>
 
         <ambientLight intensity={0.8} />
         <spotLight intensity={3.8} position={[5, 10, 20]} />
-        <OrbitControls /* Hindrer bruker fra å scrolle med uhell */
-          minDistance={760}
-          /* maxDistance={7} */
-          enableZoom={false}
-        />
+        <OrbitControls minDistance={760} enableZoom={false} />
       </Canvas>
     </CanvasContainer>
   );
