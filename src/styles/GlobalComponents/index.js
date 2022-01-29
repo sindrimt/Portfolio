@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const CanvasContainer = styled.div`
   top: 15%;
-  right: -20%;
+  right: -24%;
   position: absolute;
   width: 80%;
   height: 100%;
 
   @media ${(props) => props.theme.breakpoints.lg} {
-    left: 10%;
-    display: grid;
+    display: none;
   }
 `;
 

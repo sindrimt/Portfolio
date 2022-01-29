@@ -6,7 +6,7 @@ export default function Planet({ ...props }) {
   const group = useRef();
   useFrame(
     (state, change) =>
-      (group.current.rotation.y += 0.004) /* , (mesh.current.rotation.x += 0.002) */
+      (group.current.rotation.y += 0.002) /* , (mesh.current.rotation.x += 0.002) */
   );
   const { nodes, materials, animations } = useGLTF("/planet.gltf");
   const { actions } = useAnimations(animations, group);

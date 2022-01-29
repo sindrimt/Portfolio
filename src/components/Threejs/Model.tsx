@@ -38,20 +38,21 @@ const Loading: React.FC = () => {
 };
 
 export default function Model(props) {
-  const [darkMode, setDarkMode] = useContext(ContextState);
+  const [darkMode, setDarkMode, language, setLanguage] =
+    useContext(ContextState);
   return (
     <CanvasContainer>
       <Canvas
         colorManagement
         shadowMap
         camera={{
-          position: [1, 0.4, 2],
-          fov: 80 /* for planet: position: [10, 80, 10], fov: 50  */,
+          position: [10, 80, 10],
+          fov: 50 /* for planet: position: [10, 80, 10], fov: 50  */,
         }}
       >
         <Suspense fallback={<Loading />}>
           {/* <Geometry {...props} /> */}
-          <Island />
+          <Planet />
           <Environment preset={/* darkMode ? "night" :  */ "dawn"} />
           <ContactShadows
             rotation-x={Math.PI / 2}
@@ -66,9 +67,14 @@ export default function Model(props) {
           {/* Bytter enironment basert på dark eller lightmode (Fungerer på shiny/reflective models)f */}
         </Suspense>
 
-        <ambientLight intensity={0.8} />
-        <spotLight intensity={3.8} position={[5, 10, 20]} />
-        <OrbitControls minDistance={760} enableZoom={false} />
+        <ambientLight intensity={darkMode ? 0.1 : 0.8} />
+        <spotLight intensity={darkMode ? 0.5 : 3.8} position={[5, 10, 20]} />
+        <OrbitControls
+          minDistance={7}
+          maxDistance={7}
+          enableZoom={false}
+          enableRotate={false}
+        />
       </Canvas>
     </CanvasContainer>
   );
