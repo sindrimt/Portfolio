@@ -1,5 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import {
   Section,
   SectionDivider,
@@ -27,11 +30,15 @@ const Technologies = () => {
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Section id="tech">
       <SectionDivider />
       <br />
-      <SectionTitle>
+      <SectionTitle data-aos="fade-right">
         {language ? norwegian.technologies.title : english.technologies.title}
       </SectionTitle>
       <SectionText>
@@ -39,7 +46,7 @@ const Technologies = () => {
           ? norwegian.technologies.mainText
           : english.technologies.mainText}
       </SectionText>
-      <List>
+      <List data-aos="fade-left">
         <ListItem>
           <DiReact size="3rem" color={iconColor} />
           <ListContainer>

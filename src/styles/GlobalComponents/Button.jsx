@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-import { ButtonBack, ButtonFront } from './index'
+import { ButtonBack, ButtonFront } from "./index";
 
-const Button = (props) => (
-  <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>{props.children}
-    <ButtonFront alt={props.alt} onClick={props.onClick} disabled={props.disabled}>{props.children}</ButtonFront>
-  </ButtonBack>
-);
+const Button = (props) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
-export default Button
+  return (
+    <ButtonBack
+      alt={props.alt}
+      form={props.form}
+      disabled={props.disabled}
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      {props.children}
+      <ButtonFront
+        alt={props.alt}
+        onClick={props.onClick}
+        disabled={props.disabled}
+      >
+        {props.children}
+      </ButtonFront>
+    </ButtonBack>
+  );
+};
+
+export default Button;

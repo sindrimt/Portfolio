@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 
 import {
   IoMdMoon,
@@ -36,6 +36,17 @@ const Header = () => {
   let textColor = darkMode
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
+
+  const scrollAmount = 1;
+
+  // Scrolls 1 px
+  // Fixes bug when dark mode is toggeled
+  const scroll = (amount) => {
+    setTimeout(() => {
+      window.scrollBy(0, amount);
+    }, 400);
+  };
+
   return (
     <Container>
       <Div1>
@@ -99,7 +110,12 @@ const Header = () => {
         <SocialIcons>
           <AiFillInstagram size="3rem" color={textColor} />
         </SocialIcons>
-        <SocialIcons onClick={() => setDarkMode(!darkMode)}>
+        <SocialIcons
+          onClick={() => {
+            setDarkMode(!darkMode);
+            scroll(scrollAmount);
+          }}
+        >
           {darkMode ? (
             <IoMdSunny size="3rem" color={textColor} />
           ) : (

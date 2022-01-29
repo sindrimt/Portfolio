@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {
   CarouselButton,
@@ -35,6 +37,10 @@ const Timeline = () => {
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -79,7 +85,12 @@ const Timeline = () => {
       <SectionText>
         {language ? norwegian.timeline.mainText : english.timeline.mainText}
       </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <CarouselContainer
+        ref={carouselRef}
+        onScroll={handleScroll}
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode

@@ -11,12 +11,21 @@ const Scroll = () => {
   const [darkMode, setDarkMode] = useContext(ContextState);
   const [scrolledPast, setScrolledPast] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
+
   const color = darkMode
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
 
   const iconSize = "4rem";
   const iconScrollAmount = 70;
+
+  const scrollAmount = 1;
+
+  const scroll = (amount) => {
+    setTimeout(() => {
+      window.scrollBy(0, amount);
+    }, 400);
+  };
 
   useEffect(() => {
     const onScroll = (e) => {
@@ -45,13 +54,19 @@ const Scroll = () => {
           {darkMode ? (
             <IoMdSunny
               size={iconSize}
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() => {
+                setDarkMode(!darkMode);
+                scroll(scrollAmount);
+              }}
               color={color}
             />
           ) : (
             <IoMdMoon
               size={iconSize}
-              onClick={() => setDarkMode(!darkMode)}
+              onClick={() => {
+                setDarkMode(!darkMode);
+                scroll(scrollAmount);
+              }}
               color={color}
             />
           )}
