@@ -37,12 +37,14 @@ const Header = () => {
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
 
+  const scrollAmount = 1;
+
   // Scrolls 1 px
   // Fixes bug when dark mode is toggeled
   const scroll = (amount) => {
     setTimeout(() => {
       window.scrollBy(0, amount);
-    }, 350);
+    }, 400);
   };
 
   return (
@@ -111,7 +113,7 @@ const Header = () => {
         <SocialIcons
           onClick={() => {
             setDarkMode(!darkMode);
-            scroll(1);
+            scroll(scrollAmount);
           }}
         >
           {darkMode ? (

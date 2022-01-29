@@ -20,6 +20,7 @@ const Hero = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
   return (
     <Section row nopadding>
       <LeftSection>
