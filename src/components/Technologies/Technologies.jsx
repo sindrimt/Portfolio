@@ -46,7 +46,7 @@ const Technologies = () => {
           ? norwegian.technologies.mainText
           : english.technologies.mainText}
       </SectionText>
-      <List>
+      <List data-aos="fade-left">
         <ListItem>
           <DiReact size="3rem" color={iconColor} />
           <ListContainer>
