@@ -37,6 +37,8 @@ const Header = () => {
     ? darkTheme.colorTheme.primary1
     : lightTheme.colorTheme.primary1;
 
+  // Scrolls 1 px
+  // Fixes bug when dark mode is toggeled
   const scroll = (amount) => {
     setTimeout(() => {
       window.scrollBy(0, amount);
