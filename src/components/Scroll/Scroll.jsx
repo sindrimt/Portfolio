@@ -18,6 +18,7 @@ const Scroll = () => {
 
   const iconSize = "4rem";
   const iconScrollAmount = 70;
+  const scrollThreshold = 700;
 
   const scrollAmount = 1;
 
@@ -25,6 +26,9 @@ const Scroll = () => {
     setTimeout(() => {
       window.scrollBy(0, amount);
     }, 400);
+  };
+  const scrollNoWait = (amount) => {
+    window.scrollBy(0, amount);
   };
 
   useEffect(() => {
@@ -56,7 +60,11 @@ const Scroll = () => {
               size={iconSize}
               onClick={() => {
                 setDarkMode(!darkMode);
-                scroll(scrollAmount);
+                if (scrollTop < scrollThreshold) {
+                  scroll(scrollAmount);
+                } else {
+                  scrollNoWait(scrollAmount);
+                }
               }}
               color={color}
             />
@@ -65,7 +73,11 @@ const Scroll = () => {
               size={iconSize}
               onClick={() => {
                 setDarkMode(!darkMode);
-                scroll(scrollAmount);
+                if (scrollTop < scrollThreshold) {
+                  scroll(scrollAmount);
+                } else {
+                  scrollNoWait(scrollAmount);
+                }
               }}
               color={color}
             />
