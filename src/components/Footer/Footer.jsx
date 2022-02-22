@@ -32,7 +32,7 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
+          <LinkTitle>{language ? "Telefon" : "Call"}</LinkTitle>
           <LinkItem href="tel:111-111-1111">47 24 56 30</LinkItem>
         </LinkColumn>
         <LinkColumn>
@@ -44,7 +44,9 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>{language ? "Gamer er episk" : "Gamer is epic"}</Slogan>
+          <Slogan>
+            {language ? "Sindri Mørch Tomasson" : "Sindri Mørch Tomasson"}
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/sindrimt" target="_blank">

@@ -16,37 +16,35 @@ export const projects = [
     titleEnglish: "Discord Bot",
     title: "Discord Bot",
     descriptionEnglish:
-      "Cool Discord Bot it amet, consectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "This project started as just a small joke, but developed into a larger music bot that is actively used in several discord servers. The application communicates with Discord-Api through Discord.js",
     description:
-      "Kul Discord Bot consectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "Dette prosjektet startet bare som en liten spøk, men utvikliet seg til å bli en større musikk bot som brukes aktivt i flere discord-servere. Applikasjonen kommuniserer med Discord-Api gjennom Discord.js",
     image: "/images/fart.jpg",
     tags: ["Node", "JavaScript", "Discord.js", "Heroku"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/sindrimt/DiscordFartBot",
     id: 1,
   },
   {
     titleEnglish: "BjackJack",
     title: "BlackJack",
     descriptionEnglish:
-      "Engelsk BjackJack dolor sit amet, consectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "Dette spillet ble laget i mitt første år på universitetet. Jeg brukte java og UI-rammeverket java FXML til å lage spillet. Jeg brukte fillagring til å lagre tilstanden til programmet",
     description:
-      "NORSK Black Jackmet, Fillagrin g osv consectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "Dette spillet ble laget i mitt første år på universitetet. Jeg brukte java og UI-rammeverket java FXML til å lage spillet. Jeg brukte fillagring til å lagre tilstanden til programmet",
     image: "/images/bj.jpg",
     tags: ["Java", "FXML"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/sindrimt/blackJack",
     id: 2,
   },
   {
-    titleEnglish: "englesk ads",
-    title: "etghgff",
+    titleEnglish: "Fullstack Food Website",
+    title: "Fullstack Mat-Nettside",
     descriptionEnglish:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "This website was created in the context of a school project (Software engineering). React was used for the frontend, and python with django for the backend. The group used the scrum method where we worked in short iterations",
     description:
-      "NORSK NORSK NORSonsectetur adipisicing elit. Nesciunt vero, laborum harum repudiandae iste exercitationem delectus. Id velit exercitationem tempora?",
+      "Denne nettsiden ble laget i forbindelse med et skoleprosjekt (Software engineering). Det ble brukt React til frontend, og python med django til backend. Gruppen brukte scrum metoden hvor vi jobbet i korte iterasjoner",
     image: "/images/4.png",
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: ["React", "Python", "Django", "Rest Framework"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 3,

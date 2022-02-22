@@ -11,6 +11,7 @@ import {
   AiFillLinkedin,
   AiFillInstagram,
   DiCssdeck,
+  MdOutlineLanguage,
 } from "../../constants/icons";
 
 import { ContextState } from "../../../context/ContextState";
@@ -95,9 +96,9 @@ const Header = () => {
           {
             (console.log(`Language is: ${language ? "English" : "Norwegian"}`),
             language ? (
-              <RiEnglishInput size="3rem" color={textColor} />
+              <MdOutlineLanguage size="3rem" color={textColor} />
             ) : (
-              <RiAncientGateLine size="3rem" color={textColor} />
+              <MdOutlineLanguage size="3rem" color={textColor} />
             ))
           }
         </SocialIcons>

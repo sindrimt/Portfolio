@@ -5,9 +5,9 @@ export const norwegian = {
     about: "Om Meg",
   },
   hero: {
-    sectionTitle: ["Velkommen Til Min", "Personlige Nettside........"],
+    sectionTitle: ["Velkommen Til Min", "Personlige Nettportofølje"],
     sectionText:
-      "Dette er min personlige nettside med prosjektene jeg har gjort og litt informasjon om meg selv bla bla bla,  atque beatae numquam quod obcaecati, placeat magnam",
+      "Velkomme personlige nettside/portofølje! Denne nettsiden viser frem prosjektene og teknologiene jeg har brukt",
     buttonText: "Min CV",
   },
   projects: {
@@ -19,15 +19,15 @@ export const norwegian = {
   technologies: {
     title: "Teknologier",
     mainText:
-      "NORSK Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cumobcaecati quas ipsum, debitis reiciendis dolorum. Temporibus aarchitecto dolor!",
-    frontEndText: ["Erfaring", "med React.js"],
-    backEndText: ["Erfaring med", "Node og Databaser"],
+      "Jeg har vært borti en mengde teknologier i løpet av årene jeg har lært å programmere.",
+    frontEndText: ["Erfaring Med", "React, HTML Og Css"],
+    backEndText: ["Erfaring med", "Node, Python og Databaser"],
     uiText: ["Erfaring med", "figma lol"],
   },
   timeline: {
     header: "Om Meg",
     mainText:
-      "Norsk Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto, distinctio magnam nihil sapiente optio illum asperiores quidem possimus deleniti?",
+      "Jeg er 20 år og går 2. året informatikk på NTNU i Trondheim. Jeg begynte å programmere på videregående, og har siden jobbet mye på egen hånd.",
   },
 };
 export const english = {
@@ -37,9 +37,9 @@ export const english = {
     about: "About",
   },
   hero: {
-    sectionTitle: ["Welcome To My", "Personal Website........."],
+    sectionTitle: ["Welcome To My", "Personal Web Portfolio"],
     sectionText:
-      "EngLish Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dictarecusandae atque beatae numquam quod obcaecati, placeat magnam",
+      "Welcome personal website / portfolio! This website shows the projects and technologies I have used",
     buttonText: "My CV",
   },
   projects: {
@@ -51,14 +51,14 @@ export const english = {
   technologies: {
     title: "Technologies",
     mainText:
-      "ENGELSK Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore cumobcaecati quas ipsum, debitis reiciendis dolorum. Temporibus aarchitecto dolor!",
-    frontEndText: ["Experience", "With React.js"],
-    backEndText: ["Experience with", "Node and Databases"],
+      "I have encountered a lot of technologies over the years I have learned to program",
+    frontEndText: ["Experience With", "React, HTML And Css"],
+    backEndText: ["Experience with", "Node, Python and Databases"],
     uiText: ["Experience", "with Figma"],
   },
   timeline: {
     header: "About Me",
     mainText:
-      "Enlish Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iusto, distinctio magnam nihil sapiente optio illum asperiores quidem possimus deleniti?",
+      "I am 20 years old and am in the second year of computer science at NTNU in Trondheim. I started programming in high school, and have since worked a lot on my own.",
   },
 };

@@ -71,11 +71,15 @@ const Projects = ({ theme, setTheme }) => {
                 </TagList>
               </div>
               <UtilityList>
-                <ExternalLinks href={visit} target="_blank">
-                  {language
-                    ? norwegian.projects.server
-                    : english.projects.server}
-                </ExternalLinks>
+                {!visit ? (
+                  console.log("Ingen visit")
+                ) : (
+                  <ExternalLinks href={visit} target="_blank">
+                    {language
+                      ? norwegian.projects.server
+                      : english.projects.server}
+                  </ExternalLinks>
+                )}
                 <ExternalLinks href={source} target="_blank">
                   {language ? norwegian.projects.code : english.projects.code}
                 </ExternalLinks>
