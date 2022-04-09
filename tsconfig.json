@@ -18,7 +18,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/Header/Header.jsx"
+    "src/components/Header/Header.jsx",
+    "src/components/TimeLine/TimeLine.jsx",
+    "src/components/Threejs/Model.jsx",
+    "src/components/TimeLine/TimeLine.jsx",
+    "src/components/Threejs/Model.jsx"
   ],
   "exclude": ["node_modules"]
 }
