@@ -26,13 +26,9 @@ import { norwegian, english } from "../../constants/language";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
-interface Props {
-  scrollWidth?: number;
-}
-
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef();
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: "smooth" });
