@@ -22,7 +22,7 @@ import Planet from "./Planet";
 import Island from "./Island";
 import Geometry from "./Geometry";
 
-const Loading: React.FC = () => {
+const Loading = () => {
   const { progress } = useProgress();
   const [loading, setLoading] = useState(false);
 
