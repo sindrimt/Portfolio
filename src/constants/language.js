@@ -18,16 +18,15 @@ export const norwegian = {
   },
   technologies: {
     title: "Teknologier",
-    mainText:
-      "Jeg har vært borti en mengde teknologier i løpet av årene jeg har lært å programmere.",
+    mainText: "Her er noen av teknologiene jeg kan:",
     frontEndText: ["Erfaring Med", "React, HTML Og Css"],
-    backEndText: ["Erfaring med", "Node, Python og Databaser"],
+    backEndText: ["Erfaring med", "Node, Python/Django, MySQL og MongoDB"],
     uiText: ["Erfaring med", "figma lol"],
   },
   timeline: {
     header: "Om Meg",
     mainText:
-      "Jeg er 20 år og går 2. året informatikk på NTNU i Trondheim. Jeg begynte å programmere på videregående, og har siden jobbet mye på egen hånd.",
+      "Jeg heter Sindri Mørch Tomasson, og studerer Informatikk ved NTNU trondheim. På fritiden liker jeg å spille gitar, programmere og lese tegneserier :)",
   },
 };
 export const english = {
@@ -38,8 +37,7 @@ export const english = {
   },
   hero: {
     sectionTitle: ["Welcome To My", "Personal Web Portfolio"],
-    sectionText:
-      "Welcome personal website / portfolio! This website shows the projects and technologies I have used",
+    sectionText: "Welcome personal website / portfolio! This website shows the projects and technologies I have used",
     buttonText: "My CV",
   },
   projects: {
@@ -50,15 +48,14 @@ export const english = {
   },
   technologies: {
     title: "Technologies",
-    mainText:
-      "I have encountered a lot of technologies over the years I have learned to program",
+    mainText: "Here are some of the technologies that i know: ",
     frontEndText: ["Experience With", "React, HTML And Css"],
-    backEndText: ["Experience with", "Node, Python and Databases"],
+    backEndText: ["Experience with", "Node, Python/Django, MySQL and MongoDB"],
     uiText: ["Experience", "with Figma"],
   },
   timeline: {
     header: "About Me",
     mainText:
-      "I am 20 years old and am in the second year of computer science at NTNU in Trondheim. I started programming in high school, and have since worked a lot on my own.",
+      "My name is Sindri Mørch Tomasson and I study Informatics at NTNU trondheim. In my sparetime i enjoy playing guitar, programming and reading comics :)",
   },
 };

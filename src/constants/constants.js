@@ -28,25 +28,25 @@ export const projects = [
     titleEnglish: "BjackJack",
     title: "BlackJack",
     descriptionEnglish:
-      "Dette spillet ble laget i mitt første år på universitetet. Jeg brukte java og UI-rammeverket java FXML til å lage spillet. Jeg brukte fillagring til å lagre tilstanden til programmet",
+      "This game was created in conjunction with the subject TDT4100 Object Oriented Programming. I used the Java FXML UI framework, and file storage to save the state of the program. This was my first project in Java, and I learned a lot about object-oriented programming",
     description:
-      "Dette spillet ble laget i mitt første år på universitetet. Jeg brukte java og UI-rammeverket java FXML til å lage spillet. Jeg brukte fillagring til å lagre tilstanden til programmet",
+      "Dette spillet ble laget i sammenheng med faget TDT4100 Objektorientert Programmering. Jeg brukte UI-rammeverket Java FXML, og fillagring til å lagre tilstanden til programmet. Dette var mitt første prosjekt i Java, og jeg lærte mye om objektorientert programmering",
     image: "/images/bj.jpg",
     tags: ["Java", "FXML"],
     source: "https://github.com/sindrimt/blackJack",
     id: 2,
   },
   {
-    titleEnglish: "Fullstack Food Website",
-    title: "Fullstack Mat-Nettside",
+    titleEnglish: "Foodshare",
+    title: "Foodshare",
     descriptionEnglish:
-      "This website was created in the context of a school project (Software engineering). React was used for the frontend, and python with django for the backend. The group used the scrum method where we worked in short iterations",
+      "This website was created in the context of a school project TDT4140 Software engineering. React was used for the frontend, and python with django for the backend. The group used the scrum method where we worked in short iterations",
     description:
-      "Denne nettsiden ble laget i forbindelse med et skoleprosjekt (Software engineering). Det ble brukt React til frontend, og python med django til backend. Gruppen brukte scrum metoden hvor vi jobbet i korte iterasjoner",
-    image: "/images/4.png",
+      "Denne nettsiden ble laget i forbindelse med et skoleprosjekt TDT4140 Software engineering. Det ble brukt React til frontend, og python med django til backend. Gruppen brukte scrum metoden hvor vi jobbet i korte iterasjoner",
+    image: "/images/4.jpg",
     tags: ["React", "Python", "Django", "Rest Framework"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    source: "https://github.com/sindrimt/Foodshare",
+
     id: 3,
   },
 ];
