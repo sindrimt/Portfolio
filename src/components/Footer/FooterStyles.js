@@ -153,3 +153,15 @@ export const LinkTitle = styled.h4`
     margin-bottom: 8px;
   }
 `;
+
+export const Divider = styled.div`
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  background: ${(props) => props.theme.colorTheme.fadeBottom};
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: none;
+  }
+`;
