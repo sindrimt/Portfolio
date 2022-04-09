@@ -20,7 +20,8 @@ export const darkTheme = {
     tagColor2: "rgba(106,90,205, 0.7)",
 
     headerColor: "#9cc9e3",
-    fadeBottom: "linear-gradient(to right, #3b5d85, #0f1721)",
+    fadeBottom:
+      "linear-gradient(to right, rgba(59,93,133, 1), rgba(15,23,33, 1))",
     fadeScroll: "linear-gradient(rgba(59,93,133, 1), rgba(15,23,33, 1))",
     scrollBackground: "grey",
     sloganColor: "rgba(255, 255, 255, 0.7)",
@@ -57,9 +58,8 @@ export const lightTheme = {
     tagColor: "rgba(106,90,205, 0.5)",
     tagColor2: "rgba(106,90,205, 0.7)",
     headerColor: "rgba(116, 191, 247, 1)",
-    fadeBottom:
-      "linear-gradient(to right, rgba(255,0,0, 0.7) , rgba(240, 255, 0, 0.7))",
-    fadeScroll: "linear-gradient(rgba(255,0,0, 0.7) , rgba(240, 255, 0, 0.7))",
+    fadeBottom: "linear-gradient(to right, #945CD6 , #14ADC7)",
+    fadeScroll: "linear-gradient(#945CD6 , #14ADC7)",
     scrollBackground: "rgba(245, 245, 245, 1)",
     sloganColor: "#484b6a",
     footerHover: "#fff",

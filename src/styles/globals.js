@@ -12,8 +12,8 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-    background-image: ${(props) => props.theme.colorTheme.fadeBottom};
+/*     background-image: ${(props) => props.theme.colorTheme.fadeBottom};
+ */    scroll-behavior: smooth;
     overscroll-behavior-y: none;
     overflow-x: hidden;
   }
