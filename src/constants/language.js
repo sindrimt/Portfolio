@@ -12,7 +12,7 @@ export const norwegian = {
   },
   projects: {
     mainTitle: "Prosjekter",
-    stack: "Stack",
+    stack: "Teknologier",
     server: "Live server",
     code: "Kode",
   },
@@ -42,7 +42,7 @@ export const english = {
   },
   projects: {
     mainTitle: "Projects",
-    stack: "Stack",
+    stack: "Technologies",
     server: "Live server",
     code: "Code",
   },

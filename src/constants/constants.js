@@ -49,6 +49,19 @@ export const projects = [
 
     id: 3,
   },
+  {
+    titleEnglish: "Aage",
+    title: "Åge",
+    descriptionEnglish:
+      "Discord bot that joins a server randomly, and plays a beautiful song. It also has a small chance of playing a rare song!",
+    description:
+      "Discord bot som joiner en server tilfeldig, og spiller en vakker sang. Den har også en liten sjanse for å spille en sjelden sang! :O",
+    image: "/images/aage.jpg",
+    tags: ["Node", "Heroku", "DiscordJs"],
+    source: "https://github.com/sindrimt/aage",
+
+    id: 4,
+  },
 ];
 
 export const TimeLineData = [
