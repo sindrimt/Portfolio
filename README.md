@@ -1,1 +1,1 @@
-https://sindri-tomasson.netlify.app/
+https://sindritomasson
