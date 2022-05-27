@@ -62,6 +62,20 @@ export const projects = [
 
     id: 4,
   },
+  {
+    titleEnglish: "Youtube clone",
+    title: "Youtube klone",
+    descriptionEnglish:
+      "A clone of Youtube's home page and search features with the possibility for a user to log in to his/her youtube account",
+    description:
+      "En klone av Youtubes hjemmeside og søkefunksjonaliteter med muligheten for brukere til å logge inn med sin youtube bruker",
+    image: "/images/youtube.png",
+    tags: ["Netflify", "Typescript", "React"],
+    source: "https://github.com/sindrimt/aage",
+    visit: "https://youtube-react-clone-app.netlify.app/",
+
+    id: 5,
+  },
 ];
 
 export const TimeLineData = [
