@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function FirstPost() {
   return (
     <Wrapper>
-      <embed src="/images/oving.pdf" type="application/pdf" width="100%" height="99.8%" />
+      <object data="/images/oving.pdf" type="application/pdf" width="100%" height="99.8%" />
     </Wrapper>
   );
 }

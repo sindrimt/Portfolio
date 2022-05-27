@@ -35,7 +35,7 @@ const Hero = () => {
             data-aos-delay="1000"
             onClick={(e) => {
               e.preventDefault();
-              window.open("/resume.pdf", "_blank");
+              window.open("/resume");
             }}
           >
             {language ? norwegian.hero.buttonText : english.hero.buttonText}
